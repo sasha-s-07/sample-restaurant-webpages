@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Events</title>
+    <meta name="events" content="events information" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- general style -->
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <script src="https://kit.fontawesome.com/c03ea9a48c.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <!-- load the footer and the header of the website -->
+    <script src="js/loadFooter.js"></script>
+    <script src="js/loadHeader.js"></script>
+    <!-- Events Style -->
+    <link rel="stylesheet" type="text/css" href="css/events.css">
+    <script type="text/javascript" src="js/events.js"></script>
+  </head>
+  <body>
+    <!-- Main content -->
+    <main>
+      <div class="page-container">
+      <h2>Events</h2>
+      <div id="event-para">
+        <p>Our restaurant is happy to host your next event! We can host events with up to 100 guests.
+          Reach out to us to host your next birthday party, corporate event, baby shower, and more! </p>
+        <p> Just fill out the request form below and someone from our team will contact you within 24-48 hours.</p>
+      </div>
+      <h2>Submit a request:</h2>
+      <div class="form">
+        <form id="event_form" action="#" method="post" name="form_event">
+          <div class="label-input">
+            <label for="inf_name">First Name</label>
+            <input type="text" id="inf_name" name="f_name">
+          </div>
+          <div class="label-input">
+            <label for="inl_name">Last Name</label>
+            <input type="text" id="inl_name" name="l_name">
+          </div>
+          <div class="label-input">
+            <label for="inc_email">Email</label>
+            <input type="email" id="inc_email" name="c_email" placeholder="ex.johnsmith@gmail.com">
+          </div>
+          <div class="label-input">
+            <label for="in_phone">Phone Number</label>
+            <input type="text" id="in_phone" name="c_phone" placeholder="ex.555-555-5555">
+          </div>
+          <div class="label-input">
+            <label for="in_guests">Approximate Number of Guests</label>
+            <input type="number" id="in_guests" name="guests" placeholder="ex.50">
+          </div>
+          <div class="label-input">
+            <label for="in_message">Tell Us About Your Event</label>
+            <textarea id="in_message" name="message" form="event_form"></textarea>
+          </div>
+          <div class="button">
+            <button type="submit" name="submit">Submit</button>
+          </div>
+      </form>
+      </div>
+
+      <!-- output message hidden until form validates -->
+      <div id="thanks_msg">
+        <h2>Thank you <span id="thanksCustomer"></span> for inquiring about our Events. A team member will contact you shortly.</h2>
+      </div>
+    </div>
+    </main>
+  </body>
+
+</html>

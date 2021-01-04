@@ -1,0 +1,172 @@
+
+/* ************************general style *******************************************/
+
+
+* {
+	box-sizing: border-box;
+}
+
+*::before,*::after
+{
+	box-sizing: inherit;
+}
+
+a{
+	text-decoration: none;	
+}
+.hide{
+
+	position:absolute;
+	left:-10000px;
+	width:1px;
+	height:1px;
+}
+body{
+	margin: auto;
+	max-width: 1200px;
+	font-size: 1.1em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.page-container{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+/* **********************footer style **********************************************/
+footer{
+	clear: both;		
+	position: relative;
+	margin-bottom: 1em;
+}
+footer div#copyright{
+	border-top: 2px solid black;
+	background-color: #ddd8d7;
+	text-align: center;
+	font-size: 0.8em;
+	height: 1.8em;
+}
+footer > section{
+	background-color: #e8dede;
+	font-size: 0.8em;
+	text-transform: capitalize;
+	width: 100%;
+}
+footer > section >div.page-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+} 
+
+footer > section >div.page-container div  ul {
+	padding: 0px;
+}
+
+footer > section >div.page-container div  ul li{
+	list-style-type: none;
+}
+footer > section >div.page-container div  ul li:not(:last-child){
+	margin-bottom: 0.5em;
+}
+
+footer > section >div.page-container div  ul li a{
+	text-decoration: none;
+	color: black;
+}
+footer > section >div.page-container div  ul li a:hover{
+	color: gray;
+}
+
+/* *********************************** banner style *****************************************/
+
+#banner-container{	 
+	overflow: hidden;
+	width: 100%;	
+	background-color: #f2ecea;
+}
+
+#banner-container > div{
+
+	display: inline-block;	
+}
+
+#banner-container {
+	width: 100%;
+	text-align: center;
+
+}
+#banner-container #sitename{	 	
+	display: inline-block;	
+	font-size: 3.5em;
+	font-family: 'Lobster Two';	
+	text-transform: uppercase;
+	text-shadow: 5px 5px 10px #a66a59;
+	margin-top: 0.75em;
+
+}
+
+/* ***************************** navigatin menu style ***********************************/
+nav#main-menu{	
+	background-color: #ce9586;
+}
+nav#main-menu  a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Charm';
+	text-transform: capitalize;
+	font-size: 1em;
+}
+nav#main-menu  a:hover{
+	color: white;
+
+
+}
+nav#main-menu  ul {
+	margin: 0px;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	padding-left: 0;
+
+}
+li#shopping-cart{
+	position: absolute;
+	right: 0;
+	padding: 0px;
+
+
+}
+nav#main-menu ul > li {
+	display: inline-block;
+	list-style-type: none; 
+	vertical-align:top;
+}
+nav#main-menu ul > li:not(:last-child) {	
+	margin-right: 5%;
+	padding-right: 1em;
+	position: relative;
+}
+nav#main-menu  ul li ul {
+	background-color: #ce9586;
+	padding:0;
+	position:absolute;
+	left:-10000px;
+	text-align: justify;
+
+}
+nav#main-menu  ul li li{
+	display:block;
+	padding-left:0.4em ; 
+}
+nav#main-menu  ul li li:not(:last-child) {
+
+	border-bottom: 2px solid gray;
+
+}
+nav#main-menu  ul li:hover > ul {
+	left:0;
+	top:100%;
+	width:200px;
+}
