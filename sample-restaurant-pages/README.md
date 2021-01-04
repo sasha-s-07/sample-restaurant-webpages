@@ -1,3 +1,3 @@
-# restaurant-project
+# sample-restaurant-webpages
 
-this is a website for a fake pizza restaurant 
+This repository features an About Us and Events page made as part of a fake restaurant website project. Langauges used are HTML, CSS, and JavaScript. 
